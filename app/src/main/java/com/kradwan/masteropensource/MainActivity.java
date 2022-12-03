@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO There an Bug Here
-                tvResult.setText( counter.incrementAndGet());
+                // Fix The Bug
+                tvResult.setText( "" +  counter.incrementAndGet());
             }
         });
     }
